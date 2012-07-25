@@ -12,14 +12,15 @@
 - name: Doonesbury
   url:  http://doonesbury.slate.com
   img:  /<img alt="Doonesbury".*?\/>/
+- name: Sinfest
+  url:  http://www.sinfest.net/
 - name: Calvin and Hobbes
   url:  http://www.gocomics.com/calvinandhobbes
 - name: Barney & Clyde
   url:  http://www.cartoonistgroup.com/properties/wpwg.php?id=155
   src:  /\/properties\/barney\/art_images\/.*?\.jpg/
 - name: Foxtrot
-  urlexp: "(Time.now.wday==0) ? 'http://www.uclick.com/client/zzz/ft/' : 'http://www.uclick.com/client/zzz/ftcl/'"
-  src:  /http:..synd.imgsrv.uclick.com.comics.*?gif/
+  urlexp: "(Time.now.wday==0) ? 'http://www.gocomics.com/foxtrot' : 'http://www.gocomics.com/foxtrotclassics'"
 - name: Dilbert
   url:  http://www.dilbert.com/
   src:  /dyn.*?strip.gif/
@@ -35,6 +36,9 @@
   src:  /http.*?com.\d{6}.*?gif/
   info: /\.gif">(.+?)<\/a>/
   info_subgroup: 1
+- name: Toles
+  url:  http://cartoonbox.slate.com/tomtoles/
+  src:  /http:\/\/images.ucomics.com\/comics\/tt.*?\.(gif|png)/
 - name: xkcd
   url:  http://xkcd.com
   img:  /<img.*http.*comics.*\.png.*?>/
@@ -55,17 +59,17 @@
   img:  /<img src="http:..www.amazingsuperpowers.com.comics.*?>/
 - name: Nedroid
   url:  http://nedroid.com
-  img:  %r(<img src="http://nedroid.com/comics/.+?/>)
+  img:  /<img src="http:..nedroid.com\/comics\/.+?\/>/
 - name: Overcompensating
   url:  http://www.overcompensating.com/
   img:  /<img src="\/comics\/[^>]*>/
 - name: Gun Show
   url:  http://gunshowcomic.com
   src:  /http:\/\/gunshowcomic\.com\/comics\/.*png/
-- name: Pictures for Sad Children
-  url:  http://www.picturesforsadchildren.com/
 - name: Buttersafe
   url:  http://buttersafe.com
 - name: feel afraid
   url:  http://feelafraidcomic.com
   src:  /comics\/[^"]+.(png|gif|jpg)/
+- name: Pictures for Sad Children
+  url:  http://www.picturesforsadchildren.com/

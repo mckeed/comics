@@ -41,7 +41,7 @@ def default_src(url = '')
   if url =~ /http:\/\/(www.)?comics\.com/
     '/http.*?full.gif/'
   elsif url =~ /gocomics\.com/
-    '/http.*?\/cdn.svcs[^\'"]*/'
+    '/http.*?\/assets.amuniversal.com[^\'"]*/'
   elsif url =~ /uclick\.com/
     '/\/feature.*?gif/'
   else
